@@ -225,7 +225,7 @@ public class DbDocUI {
 					DBHelper.user = dbUserText.getText();
 					DBHelper.password = dbPsText.getText();
 					DBHelper.url = "jdbc:mysql://" + dbIpText.getText() + ":" + dbPortText.getText() + "/" 
-									+ dbNameText.getText() + "?characterEncoding=utf8";
+									+ dbNameText.getText() + "?characterEncoding=utf8&useSSL=false";
 					// 初始化模板引擎  
 			    	FreeMarkerUtils.initFreeMarker(bean.ftlBasePath);
 			    	/** 模板引擎所需要的数据Map */
